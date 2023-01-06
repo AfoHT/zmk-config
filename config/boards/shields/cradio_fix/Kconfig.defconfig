@@ -1,0 +1,6 @@
+if SHIELD_CRADIO_FIX_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
