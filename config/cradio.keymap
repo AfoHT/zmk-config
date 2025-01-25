@@ -235,6 +235,14 @@
             key-positions = <8 18>;
             bindings = <M_RCLK>;
         };
+
+        // Skip going to a layer for SQT (')
+        // Bind u + i to output '
+        combo_lsqt {
+            timeout-ms = <50>;
+            key-positions = <13 14>;
+            bindings = <&kp SQT>;
+        };
     };
 
     conditional_layers {
