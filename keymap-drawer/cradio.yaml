@@ -260,3 +260,5 @@ combos:
   k: {t: '$$phosphor:bold/mouse-middle-click$$', s: Middle}
 - p: [8, 18]
   k: {t: '$$phosphor:bold/mouse-right-click$$', s: Right}
+- p: [13, 14]
+  k: ''''
