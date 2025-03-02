@@ -412,14 +412,14 @@
         mgmt_layer {
             bindings = <
         //╭──────────┬──────────┬──────────┬──────────┬──────────╮   ╭──────────┬──────────┬──────────┬──────────┬──────────╮
-        //│ RESET    │BOOTLOADER│          │PROFILE 3 │PROFILE 0 │   │          │          │          │BOOTLOADER│ RESET    │
-          &sys_reset &bootloader &trans &bt BT_SEL 3  &bt BT_SEL 0   &trans     &trans     &trans    &bootloader &sys_reset
+        //│ RESET    │BOOTLOADER│PROFILE 6 │PROFILE 3 │PROFILE 0 │   │          │          │          │BOOTLOADER│ RESET    │
+      &sys_reset &bootloader &bt BT_SEL 6 &bt BT_SEL 3  &bt BT_SEL 0 &trans     &trans     &trans    &bootloader &sys_reset
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│          │          │          │PROFILE 4 │PROFILE 1 │   │          │ DELETE   │          │          │          │
-          &trans     &trans     &trans &bt BT_SEL 4   &bt BT_SEL 1   &trans     &kp DEL    &trans     &trans     &trans
+        //│          │          │PROFILE 7 │PROFILE 4 │PROFILE 1 │   │          │ DELETE   │          │          │          │
+          &trans   &trans &bt BT_SEL 7 &bt BT_SEL 4   &bt BT_SEL 1   &trans     &kp DEL    &trans     &trans     &trans
         //├──────────┼──────────┼──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┼──────────┼──────────┤
-        //│ CLEAR BT │          │          │          │PROFILE 2 │   │ BT/USB   │ EXT_PWR  │          │          │          │
-          &bt BT_CLR &trans     &trans     &trans     &bt BT_SEL 2  &out OUT_TOG &ext_power EP_TOG &trans &trans &trans
+        //│ CLEAR BT │          │          │PROFILE 5 │PROFILE 2 │   │ BT/USB   │ EXT_PWR  │          │          │          │
+          &bt BT_CLR &trans     &trans &bt BT_SEL 5   &bt BT_SEL 2  &out OUT_TOG &ext_power EP_TOG &trans &trans &trans
         //╰──────────┴──────────┴──────────┼──────────┼──────────┤   ├──────────┼──────────┼──────────┴──────────┴──────────╯
                                            &trans     &trans         &trans     &trans
         //                                 ╰──────────┴──────────╯   ╰──────────┴──────────╯
