@@ -213,7 +213,7 @@ layers:
   mgmt:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - $$mdi:progress-download$$
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', h: '6'}
   - {h: '4', s: '$$mdi:bluetooth-connect$$'}
   - {h: '1', s: '$$mdi:bluetooth-connect$$'}
   - {t: ▽, type: trans}
@@ -223,7 +223,7 @@ layers:
   - {t: '$$mdi:backup-restore$$', type: bootloader}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', h: '7'}
   - {h: '5', s: '$$mdi:bluetooth-connect$$'}
   - {h: '2', s: '$$mdi:bluetooth-connect$$'}
   - {t: ▽, type: trans}
@@ -234,7 +234,7 @@ layers:
   - $$mdi:bluetooth-off$$
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: '$$mdi:bluetooth-connect$$', h: '5'}
   - {h: '3', s: '$$mdi:bluetooth-connect$$'}
   - {t: '$$mdi:toggle-switch$$', h: '$$mdi:bluetooth$$', s: '$$mdi:usb$$'}
   - EP TOG
